@@ -1,0 +1,56 @@
+.carousel-inner {
+    height: 300px;
+}
+
+.map-choice:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.loc-choice {
+    float: left;
+    width: 30%;
+}
+
+.map {
+    float: left;
+    width: 70%;
+    height: 400px;
+}
+
+.address {
+}
+
+body {
+    background-color: #f2f4f7;
+}
+
+footer {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.col-sm {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.nav-item {
+    font-size: 1.4rem;
+}
+
+.btn-link {
+    color: black;
+}
+
+.btn-link:hover {
+    color: black;
+    text-decoration: none;
+}
