@@ -1,5 +1,5 @@
 .carousel-inner {
-    height: 300px;
+    height: 400px;
 }
 
 .map-choice:after {
@@ -23,7 +23,8 @@
 }
 
 body {
-    background-color: #f2f4f7;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1)),
+            url("../images/test_background.jpg");
 }
 
 footer {
@@ -38,12 +39,22 @@ p {
     text-align: center;
 }
 
-.navbar-brand {
-    font-size: 1.8rem;
+.menu {
+    background-color: rgba(237, 239, 242, 0.85);
 }
 
-.nav-item {
+.menu-list {
+}
+
+.menu-item {
     font-size: 1.4rem;
+    color: navy;
+}
+
+.menu-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000065;
 }
 
 .btn-link {
@@ -53,4 +64,37 @@ p {
 .btn-link:hover {
     color: black;
     text-decoration: none;
+}
+
+.carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+}
+
+.sticky-top-ie {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1020;
+}
+
+#home {
+    height:69px;
+}
+
+.icon {
+    color: navy;
+}
+
+.container-lg {
+    background-color: #f7f7f7;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.title {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

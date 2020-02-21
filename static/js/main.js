@@ -1,4 +1,4 @@
-$('a[class="nav-item nav-link"]')
+$('a[class="nav-item nav-link menu-item"]')
     .not('[carousel-control-prev]')
     .click(function(){
     $('html, body').animate({
@@ -6,3 +6,4 @@ $('a[class="nav-item nav-link"]')
 }, 500);
     return false;
 });
+
