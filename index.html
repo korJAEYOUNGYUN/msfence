@@ -12,7 +12,7 @@
 <body>
 <div class="body">
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">미성철망</a>
+        <a class="navbar-brand" href="index.html">미성철망</a>
         <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
                 class="navbar-toggler navbar-light"
                 data-target="#navbarNavAltMarkup" data-toggle="collapse" type="button">
@@ -20,10 +20,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">홈</a>
+                <a class="nav-item nav-link" href="index.html">홈</a>
                 <a class="nav-item nav-link" href="#">제품</a>
-                <a class="nav-item nav-link" href="#">오시는 길</a>
-                <a class="nav-item nav-link" href="#">문의</a>
+                <a class="nav-item nav-link" href="way-to-come.html">오시는 길</a>
+                <a class="nav-item nav-link" href="contact.html">문의</a>
             </div>
         </div>
     </nav>
@@ -57,68 +57,42 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="products">
+    <div class="container-fluid">
+        <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <a class="nav-link active" id="nav-fence-tab" data-toggle="tab" href="#nav-fence" role="tab" aria-controls="nav-fence" aria-selected="true">휀스</a>
+                <a class="nav-link" id="nav-mesh-tab" data-toggle="tab" href="#nav-mesh" role="tab" aria-controls="nav-mesh" aria-selected="false">콘베이어벨트</a>
+                <a class="nav-link" id="nav-stainless-tab" data-toggle="tab" href="#nav-stainless" role="tab" aria-controls="nav-stainless" aria-selected="false">스텐레스망</a>
+                <a class="nav-link" id="nav-punching-tab" data-toggle="tab" href="#nav-punching" role="tab" aria-controls="nav-punching" aria-selected="false">타공망</a>
+                <a class="nav-link" id="nav-expanded-tab" data-toggle="tab" href="#nav-expanded" role="tab" aria-controls="nav-expanded" aria-selected="false">철판망</a>
+                <a class="nav-link" id="nav-grating-tab" data-toggle="tab" href="#nav-grating" role="tab" aria-controls="nav-grating" aria-selected="false">그레이팅</a>
+                <a class="nav-link" id="nav-welding-tab" data-toggle="tab" href="#nav-welding" role="tab" aria-controls="nav-welding" aria-selected="false">용접철망</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-fence" role="tabpanel" aria-labelledby="nav-fence-tab">fence</div>
+            <div class="tab-pane fade" id="nav-mesh" role="tabpanel" aria-labelledby="nav-mesh-tab">mesh</div>
+            <div class="tab-pane fade" id="nav-stainless" role="tabpanel" aria-labelledby="nav-stainless-tab">stainless</div>
+            <div class="tab-pane fade" id="nav-punching" role="tabpanel" aria-labelledby="nav-punching-tab">punching</div>
+            <div class="tab-pane fade" id="nav-expanded" role="tabpanel" aria-labelledby="nav-expanded-tab">expanded</div>
+            <div class="tab-pane fade" id="nav-grating" role="tabpanel" aria-labelledby="nav-grating-tab">grating</div>
+            <div class="tab-pane fade" id="nav-welding" role="tabpanel" aria-labelledby="nav-welding-tab">welding</div>
+        </div>
+    </div>
 
-    </div>
-    <div class="container-fluid" id="way-to-come">
-        <div class="title">
-            <h3>오시는 길</h3>
-        </div>
-        <div class="map-choice">
-            <div class="map" id="map"></div>
-        </div>
-        <div class="address">
-            <i class="fas fa-map-marker-alt icon"></i>[153-755] 서울특별시 금천구 시흥3동 984 유통상가 2동 113호
-        </div>
-    </div>
-    <div class="container-fluid" id="contact">
-        <div class="title">
-            <h3>문의</h3>
-        </div>
-        <div>
-            <p>서울 사무실</p>
-            <p><i class="fas fa-phone-alt icon"></i>02-805-1551</p>
-            <p><i class="fas fa-fax icon"></i>FAX 02-805-1552</p>
-        </div>
-        <div>
-            <p>공장</p>
-            <p><i class="fas fa-phone-alt icon"></i>031-684-2715</p>
-            <p><i class="fas fa-fax icon"></i>FAX 031-684-2716</p>
-        </div>
-    </div>
     <div class="container-fluid footer">
         <div class="footer-info footer-contact">
-            문의: 02-805-1551(서울 사무실) | 031-684-2715(공장)
+            문의&nbsp;:&nbsp; 02-805-1551(서울 사무실) &nbsp; | &nbsp; 031-684-2715(공장)
         </div>
         <div class="footer-info footer-address">
-            주소: 서울특별시 금천구 시흥3동 984 유통상가 2동 113호
+            주소&nbsp;:&nbsp; 서울특별시 금천구 시흥3동 984 유통상가 2동 113호
         </div>
         <div class="footer-info copyright">
-            COPYRIGHT &copy; 미성철망 All rights reserved.
+            COPYRIGHT &copy; MSFENCE All rights reserved.
         </div>
     </div>
 </div>
 
-<script
-        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ulnuuxoxgp&callback=initMap"
-        type="text/javascript">
-</script>
-<script type="text/javascript">
-    var map = null;
-    var marker = null;
-
-    function initMap() {
-        map = new naver.maps.Map('map', {
-            center: new naver.maps.LatLng(37.443181, 126.902677),
-            zoom: 15
-        });
-
-        marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.443181, 126.902677),
-            map: map,
-        });
-    }
-</script>
 <script
         crossorigin="anonymous"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

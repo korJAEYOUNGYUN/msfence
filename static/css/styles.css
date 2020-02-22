@@ -48,7 +48,7 @@ p {
     color: #4f5051;
 }
 
-.nav-link {
+.navbar-nav .nav-link {
     margin-left: 50px;
 }
 
@@ -84,6 +84,7 @@ p {
     margin-left: 0;
     background-color: #e6e1dd;
     position: relative;
+    margin-bottom: 0;
 }
 
 .carousel-indicators li {
@@ -141,4 +142,22 @@ p {
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.nav-tabs .nav-link {
+    padding: 15px 25px;
+    background-color: #444444;
+    color: white;
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-link .active {
+    background-color: #ffffff;
+    color: black;
 }
