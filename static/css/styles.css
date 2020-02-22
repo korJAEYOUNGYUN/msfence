@@ -1,11 +1,12 @@
-.carousel-inner {
-    height: 400px;
-}
-
 .map-choice:after {
     content: "";
     display: block;
     clear: both;
+}
+
+.map-choice {
+    display: flex;
+    justify-content: center;
 }
 
 .loc-choice {
@@ -14,7 +15,6 @@
 }
 
 .map {
-    float: left;
     width: 70%;
     height: 400px;
 }
@@ -23,8 +23,6 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1)),
-            url("../images/test_background.jpg");
 }
 
 footer {
@@ -39,21 +37,34 @@ p {
     text-align: center;
 }
 
-.menu {
-    background-color: rgba(237, 239, 242, 0.85);
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
-.menu-list {
+.nav-item {
+    font-size: 1rem;
+    color: #4f5051;
 }
 
-.menu-item {
-    font-size: 1.4rem;
-    color: navy;
+.nav-link {
+    margin-left: 50px;
 }
 
-.menu-brand {
-    font-size: 1.8rem;
+.nav-item:hover {
+    color: #000000;
+}
+
+.navbar-brand {
+    margin-left: 200px;
+    margin-right: 150px;
+    font-size: 1.2rem;
     font-weight: bold;
+    color: #000065;
+}
+
+.navbar-brand:hover {
     color: #000065;
 }
 
@@ -66,10 +77,25 @@ p {
     text-decoration: none;
 }
 
+.carousel-indicators {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #e6e1dd;
+    position: relative;
+}
+
 .carousel-indicators li {
-    width: 7px;
-    height: 7px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
+    background-color: #8e8e8e;
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+    background-color: #006992;
 }
 
 .sticky-top-ie {
@@ -77,10 +103,6 @@ p {
     width: 100%;
     top: 0;
     z-index: 1020;
-}
-
-#home {
-    height:69px;
 }
 
 .icon {
@@ -97,4 +119,26 @@ p {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.footer {
+    background-color: #1c1b1b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-info {
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    color: #a4a4a4;
+}
+
+.carousel-inner {
+    background-color: #e6e1dd;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
 }
