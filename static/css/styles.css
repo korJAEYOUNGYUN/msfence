@@ -144,12 +144,12 @@ p {
     padding-left: 0;
 }
 
-.carousel-item {
+.slide-image {
     height: 400px;
 }
 
 .nav-tabs .nav-link {
-    padding: 15px 25px;
+    padding: 15px 40px;
     background-color: #444444;
     color: white;
     border: 0;
@@ -160,4 +160,60 @@ p {
 .nav-tabs .nav-link .active {
     background-color: #ffffff;
     color: black;
+}
+
+.card-list {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 20%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.card-title {
+    text-align: center;
+    color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.card-title:hover {
+    color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #2e2f30;
+    height: 40px;
+    width: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+
+}
+
+.product-name {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-item {
+    background-color: white;
+}
+
+.card-img-overlay {
+    font-weight: bold;
+}
+
+.info-img {
+    height: 300px;
 }
